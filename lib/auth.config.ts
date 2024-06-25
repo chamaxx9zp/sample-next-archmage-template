@@ -7,7 +7,7 @@ export const authConfig = {
   callbacks: {
     authorized({ auth, request }: any) {
       // console.log({ auth, mCookies: request });
-      console.log({ auth });
+      // console.log({ auth });
 
       // console.log({ aa: request.nextUrl, bb: request.method });
 

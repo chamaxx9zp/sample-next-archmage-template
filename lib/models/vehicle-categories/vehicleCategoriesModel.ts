@@ -15,10 +15,7 @@ import {
     image: varchar('image', { length: 500 }).notNull(),
     content: text('content').notNull(),
     slug: varchar('slug', { length: 100 }).notNull(),
-    visibility: boolean('visibility').notNull().default(true),
     created_at: timestamp('created_at').notNull().defaultNow(),
     updated_at: timestamp('updated_at').notNull().defaultNow(),
-    created_by: varchar('created_by', { length: 100 }).notNull(),
-    updated_by: varchar('updated_by', { length: 100 }).notNull()
   });
   

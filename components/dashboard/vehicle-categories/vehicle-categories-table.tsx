@@ -69,7 +69,7 @@ function CategoryRow({ category }: { category: SelectVehicleCategory }) {
         <TableCell className="font-medium">{category.vehicle_category_id}</TableCell>
       </Link>
       <TableCell className="hidden md:table-cell">{category.vehicle_category_name}</TableCell>
-      <TableCell className="hidden md:table-cell">{category.visibility ? 'Available' : 'Unavailable'}</TableCell>
+      {/* <TableCell className="hidden md:table-cell">{category.visibility ? 'Available' : 'Unavailable'}</TableCell> */}
       <TableCell>
         <Button
           className="w-full"

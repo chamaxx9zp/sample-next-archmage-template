@@ -55,14 +55,15 @@ export async function getVehicleCategoryById(id: string) {
 export async function addVehicleCategory(category: any) {
     try {
       const data = {
-        vehicle_category_name: category.vehicle_category_name,
+        vehicle_category_name: category.name,
         image: category.image,
         content: category.content,
         slug: category.slug,
-        visibility: category.visibility,
         created_by: category.created_by,
         updated_by: category.updated_by,
+        
       };
+      // console.log(data)
       await db.insert(vehicleCategories).values(data);
       return true;
     } catch (error) {
@@ -78,7 +79,6 @@ export async function updateVehicleCategory(category: any, id: string) {
         image: category.image,
         content: category.content,
         slug: category.slug,
-        visibility: category.visibility,
         updated_by: category.updated_by
       };
       console.log({ id, data });
