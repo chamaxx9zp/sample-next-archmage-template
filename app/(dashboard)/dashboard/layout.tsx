@@ -6,6 +6,7 @@ import { Logo, SettingsIcon, UsersIcon, VercelLogo } from '@/components/icons';
 import { User } from '@/components/dashboard/users/user';
 import { NavItem } from 'app/nav-item';
 import { BiGame } from "react-icons/bi";
+import { FaCar } from 'react-icons/fa';
 export const metadata = {
   title: 'Next.js App Router + NextAuth + Tailwind CSS',
   description:
@@ -42,6 +43,10 @@ export default function RootLayout({
                     {/* <SettingsIcon className="h-4 w-4" ></SettingsIcon> */}
                     <BiGame className="h-4 w-4" />
                     Products
+                  </NavItem>
+                  <NavItem href="/dashboard/master-data/vehicle-categories">
+                    <FaCar className="h-4 w-4" />
+                    Vehicle Categories
                   </NavItem>
                   <NavItem href="/dashboard/settings">
                     <SettingsIcon className="h-4 w-4" />

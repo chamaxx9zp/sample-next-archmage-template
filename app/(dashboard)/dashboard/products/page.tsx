@@ -5,11 +5,7 @@ import { ProductTable } from '@/components/dashboard/products/products-table';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-const page = async ({
-    searchParams
-}: {
-    searchParams: { q: string; offset: string };
-}) => {
+const page = async ({searchParams}: {searchParams: { q: string; offset: string };}) => {
     const search = searchParams.q ?? '';
     const offset = searchParams.offset ?? 0;
     const { products, newOffset } = await getProducts(search, Number(offset));
