@@ -65,7 +65,7 @@ function CategoryRow({ category }: { category: SelectVehicleCategory }) {
 
   return (
     <TableRow>
-      <Link href={`/dashboard/vehicle-categories/${categoryId}`}>
+      <Link href={`/dashboard/master-data/vehicle-categories/${categoryId}`}>
         <TableCell className="font-medium">{category.vehicle_category_id}</TableCell>
       </Link>
       <TableCell className="hidden md:table-cell">{category.vehicle_category_name}</TableCell>

@@ -25,7 +25,7 @@ export async function updateVehicleCategoryAction(values: any, id: string) {
   await updateVehicleCategory(values, id);
 }
 
-// export async function fetchSingleVehicleCategoryById(id: string) {
-//   // Fetch a single vehicle category by ID
-//   return await getVehicleCategoryById(id);
-// }
+export async function fetchSingleVehicleCategoryById(id: string) {
+  // Fetch a single vehicle category by ID
+  return await getVehicleCategoryById(id);
+}

@@ -28,12 +28,14 @@ const page = async ({ params }: any) => {
         <main className="flex flex-1 flex-col p-4 md:p-6">
             <div className="flex items-center mb-8">
                 <h1 className="font-semibold text-lg md:text-2xl">Update Product</h1>
-                <Link className="ml-auto" href={'/dashboard/products'} > <Button variant="outline">Back</Button>
+                <Link className="ml-auto" href={'/dashboard/products'} > 
+                    <Button variant="outline">Back</Button>
                 </Link>
             </div>
             <AddEditProductForm edit={true} name={product.name} price={product.price.toString()} image={product.image} id={params.id} />
 
-        </main>)
+        </main>
+    )
 }
 
 export default page

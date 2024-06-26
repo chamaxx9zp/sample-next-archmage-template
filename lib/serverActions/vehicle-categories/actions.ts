@@ -75,7 +75,7 @@ export async function addVehicleCategory(category: any) {
 export async function updateVehicleCategory(category: any, id: string) {
     try {
       const data = {
-        name: category.name,
+        vehicle_category_name: category.name,
         image: category.image,
         content: category.content,
         slug: category.slug,
